@@ -25,7 +25,7 @@ body {
 
 .containerHeader{  
   padding: 0;
-  background: url(/img/fondo-intro.jpg) no-repeat center;
+  background: url(../img/fondo-intro.jpg) no-repeat center;
   background-size: cover;
   height: 555px;  
 }
