@@ -59,6 +59,7 @@ body {
 
 .itemMenu{
   display: flex;
+  margin-top: 15px;
 }
 
 .ulNav{
@@ -632,7 +633,14 @@ body p em {
 }
 
 
-/*falta ver esa resolucion de 280px de merda*/
+
+@media (max-width: 1200px) {
+  .menu-content {
+    width: 100%;
+    max-width: 890px;
+  }
+}
+
 @media (max-width: 991px) {
   .logo {
     margin-top: 12px;        
@@ -1133,6 +1141,39 @@ body p em {
   .footer__logo {
     margin-right: 40px;
   }  
+
+  .servicios__item1, 
+  .servicios__item2,
+  .servicios__item3 {
+    max-width: 350px;
+    width: 100%;
+    height: 160px;
+  }
+  
+  .servicios__item1 img,
+  .servicios__item2 img,
+  .servicios__item3 img {
+    max-width: 50px;
+    width: 100%;
+    position: absolute;
+    top: -34px;
+    left: 50%;
+    margin-left: -25px;
+  }
+  
+  .servicios__item1 h3,
+  .servicios__item2 h3,
+  .servicios__item3 h3 {
+    font-size: 16px;
+  }
+  
+  .servicios__item1 p,
+  .servicios__item2 p,
+  .servicios__item3 p {
+    margin-top: 12px;
+    max-width: 180px;
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1318,6 +1359,100 @@ body p em {
   .footer__logo {
     margin-right: 40px;
   }
+
+  .servicios__item1, 
+  .servicios__item2,
+  .servicios__item3 {
+    max-width: 310px;
+    width: 100%;
+    height: 160px;
+  }
+  
+  .servicios__item1 img,
+  .servicios__item2 img,
+  .servicios__item3 img {
+    max-width: 50px;
+    width: 100%;
+    position: absolute;
+    top: -28px;
+    left: 50%;
+    margin-left: -25px;
+  }
+  
+  .servicios__item1 h3,
+  .servicios__item2 h3,
+  .servicios__item3 h3 {
+    font-size: 18px;
+  }
+  
+  .servicios__item1 p,
+  .servicios__item2 p,
+  .servicios__item3 p {
+    margin-top: 12px;
+    max-width: 180px;
+    font-size: 19px;
+  }
   
 }
 
+@media (max-width: 280px) {
+  .nosotros__cuadro,
+  .servicios__cuadro,
+  .contacto__cuadro {
+    max-width: 240px;
+    width: 100%;
+  }
+
+  .nosotros h2,
+  .servicios h2,
+  .contacto h2 {
+    font-size: 40px;
+  }
+
+  .servicios__item1, 
+  .servicios__item2,
+  .servicios__item3 {
+    max-width: 210px;
+    width: 100%;
+    height: 160px;
+  }
+  
+  .servicios__item1 img,
+  .servicios__item2 img,
+  .servicios__item3 img {
+    max-width: 40px;
+    width: 100%;
+    position: absolute;
+    top: -28px;
+    left: 50%;
+    margin-left: -20px;
+  }
+  
+  .servicios__item1 h3,
+  .servicios__item2 h3,
+  .servicios__item3 h3 {
+    font-size: 16px;
+  }
+  
+  .servicios__item1 p,
+  .servicios__item2 p,
+  .servicios__item3 p {
+    margin-top: 12px;
+    max-width: 180px;
+    font-size: 18px;
+  }
+
+  .contacto__btnForm {
+    max-width: 240px;
+    width: 100%;
+  }
+
+  .nosotros__form {
+    max-width: 240px;
+    width: 100%;
+  }
+
+  .footer__logo {
+    margin: 0;
+  }
+}
